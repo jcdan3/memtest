@@ -376,6 +376,14 @@ int main()
     // struct et class
     // perfomance : pointer vs non-pointer et heap vs stack
     // reference
+
+    std::cout << "The following variable p points to const char containing the value abc" << std::endl;
+    const char *p = "abc";
+    std::cout << "we see that when doing *(++p), we increment the adress of 1 object, thus we get b" << std::endl;
+    std::cout << *p << std::endl;
+    std::cout << *(++p) << std::endl;
+    p+=1;
+    std::cout << *p;
     int in;
     std::cin >> in;
 }
